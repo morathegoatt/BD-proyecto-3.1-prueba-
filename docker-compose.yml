@@ -1,0 +1,11 @@
+services:
+  mi-aplicacion-web:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - DB_HOST=db.hjwzvrmgjqlhudzgjvur.supabase.co
+      - DB_PORT=5432
+      - DB_DATABASE=postgres
+      - DB_USER=postgres
+      - DB_PASSWORD=MoritA_2025
